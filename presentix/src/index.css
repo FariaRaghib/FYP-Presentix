@@ -1,0 +1,320 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'dosis';
+  src: url(./assets/font/Dosis.ttf);
+}
+@layer components {
+.nav_menu_item {
+  @apply py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-black dark:hover:bg-gray-700 dark:hover:text-black lg:dark:hover:bg-transparent dark:border-gray-700;
+}
+}
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+@keyframes textWriteIn {
+  to {
+    width: 100%; /* Fully reveal the text */
+  }
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 50, 0.7); /* Dark blue color with some transparency */
+  z-index: -1;
+}
+
+
+/* CSS */
+.btn {
+  background-color: #0078d0;
+  border: 0;
+  border-radius: 56px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: system-ui,-apple-system,system-ui,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  outline: 0;
+  padding: 12px 21px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn:before {
+  background-color: initial;
+  background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+  border-radius: 125px;
+  content: "";
+  height: 50%;
+  left: 4%;
+  opacity: .5;
+  position: absolute;
+  top: 0;
+  transition: all .3s;
+  width: 92%;
+}
+
+.btn:hover {
+  box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+  transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+  .button-71 {
+    padding: 16px 48px;
+  }
+}
+.headings{
+  font-size: 50px;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+ font-weight: 600;
+  text-align: center;
+}
+.pricing {
+  border: 1px solid blue;
+  border-radius: 10px;
+  width: 100%;
+  padding: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.pricing-title{
+  font-size: 25px;
+  text-align: center;
+}
+.pricing-price{
+  font-size: 35px;
+  text-align: center;
+}
+
+.spacer{
+  content: "";
+  margin: 35px 0px;
+}
+.headingStyle {
+  content: ""; /* Create a pseudo-element for the underline */
+/* Adjust the distance of the underline from the text */
+ /* Position the underline at the left edge of the container */
+  width: 200px;
+  height: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; /* Make the underline span the entire width of the container */
+  border-bottom: 5px solid blue;
+}
+
+.services-main{
+  background-color: rgb(1, 1, 70);
+}
+.service-title{
+  font-size: 35px;
+  font-weight: 600;
+
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.sidebar_main{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background-color: white;
+  color: rgb(0, 0, 0);
+  padding: 15px;
+  font-size: 20px;
+  margin: 0;
+}
+@media (min-width:750px) {
+  .sidebar_main{
+    height: 85vh;
+  }
+}
+.center-container {
+  display: flex;  
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  height: 80vh;
+  border-radius: 15px;
+  background-color: rgb(1, 1, 70);
+  color: white;
+}
+.sidebar_menu_item{
+  font-size: 18px;
+
+  color: #84828A;
+  padding: 10px;
+  border-radius: 5px;
+  padding: 7px;
+}
+.sidebar_menu_item:hover{
+  font-size: 18px;
+  width: 100%;
+  color: #0074E4;
+  background-color: #e8e8e8;
+  padding: 13px;
+}
+.sidebar_menu_item.active {
+  font-size: 18px;
+  color: #0074E4;
+  background-color: #e8e8e8;
+  padding: 13px;
+}
+.account_card_main{
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.account_card{
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.container {
+  width: 300px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.animated-progress {
+  width: 100%;
+  height: 20px;
+  border-radius: 5px;
+  margin: 20px 10px;
+  border: 1px solid rgb(189, 113, 113);
+  overflow: hidden;
+  position: relative;
+}
+
+.animated-progress span {
+  height: 100%;
+  display: block;
+  width: 0;
+  color: rgb(255, 251, 251);
+  line-height: 30px;
+  position: absolute;
+  text-align: end;
+  padding-right: 5px;
+}
+progress{
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+.progress-blue span {
+  background-color: blue;
+}
+.form-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.form-group>label {
+  bottom: 10px;
+  left: 15px;
+  position: absolute;
+  background-color: white;
+  border-radius: 5px;
+  padding: 0px 5px;
+  font-size: 1.1em;
+  transition: 0.2s;
+  pointer-events: none;
+}
+.flex-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.single-chart {
+  width: 100%;
+  justify-content: space-around ;
+}
+
+.circular-chart {
+  display: block;
+  margin: 10px auto;
+  max-width: 80%;
+  max-height: 250px;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 3.8;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.circular-chart.orange .circle {
+  stroke: #ff9f00;
+}
+
+.circular-chart.green .circle {
+  stroke: #4CC790;
+}
+
+.circular-chart.blue .circle {
+  stroke: #3c9ee5;
+}
+
+.percentage {
+  fill: #666;
+  font-family: sans-serif;
+  font-size: 0.5em;
+  text-anchor: middle;
+}
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-control:focus~label,
+.form-control:valid~label {
+  bottom: 32px;
+}
+.footer_title{
+  font-size: 30px;
+
+}
