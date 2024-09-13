@@ -3,4 +3,8 @@ A software tool design to analyze our presentation skills and mark them accordin
 
 https://github.com/user-attachments/assets/22076168-036f-449a-93c7-443635d9b5ba
 
+The project contributes in major innovation by utilizing AI and machine learning to automate and standardize communication skill assessment. It enhances the current methods by minimizing subjectivity and bias, ensuring consistent evaluations, and providing real-time feedback. The creation of machine learning models for speech and body language analysis marks a significant advancement in the field, enabling more accurate, efficient, and reliable assessments. This innovation promises to revolutionize the way communication skills are evaluated across various domains.
+![poster](https://github.com/user-attachments/assets/40bc7ce8-b76c-4b1c-b65a-955b6ae42b45)
+
+
 
