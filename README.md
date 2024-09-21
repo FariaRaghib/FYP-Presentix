@@ -66,6 +66,6 @@ The system provides the following scores:
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Contributors
-Abdul Hannan Tahir (20-CP-19)
-Faria Raghib (20-CP-56)
-Muhammad Ehsanullah (20-CP-57)
+- Abdul Hannan Tahir (20-CP-19)
+- Faria Raghib (20-CP-56)
+- Muhammad Ehsanullah (20-CP-57)
